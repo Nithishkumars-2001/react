@@ -1,0 +1,1383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>React Interview Questions & Answers | Beginner to Advanced</title>
+
+    <meta name="description"
+        content="Prepare for React interviews with the latest React interview questions and answers. Covers beginner, intermediate, and advanced React concepts, hooks, components, state, props, and performance optimization." />
+
+    <meta name="keywords"
+        content="react interview questions, react js interview questions, react interview questions and answers, react hooks interview questions, react coding interview, frontend interview questions, javascript react interview" />
+
+    <meta name="author" content="React Interview Guide">
+    <meta name="robots" content="index, follow">
+
+    <!--My css-->
+    <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="icon" href="assets/img/company-logo.png" type="image/png">
+
+    <!--Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+
+<body style="background-color: #323232">
+
+    <!-- NavBar -->
+    <nav id="Navbar" class="navbar px-3 px-md-4 py-md-3">
+
+        <div class="website-name text-white">
+            <div class="logo-img">
+                <i class="fa-brands fa-react"></i>
+            </div>
+
+            <a href="index.html" style="text-decoration: none;">
+                <h2 class="logo-style ps-3"> React Interview Guide </h2>
+            </a>
+        </div>
+
+        <div class="navbar-item">
+            <div class="navbar-menu pe-5">
+                <ul class="navbar-menu-links text-white">
+                    <a href="index.html">
+                        <li> Overview </li>
+                    </a>
+
+                    <a href="page2.html">
+                        <li> React Basics </li>
+                    </a>
+
+                    <a href="page3.html">
+                        <li> Hooks </li>
+                    </a>
+
+                    <a href="page4.html">
+                        <li> Advanced </li>
+                    </a>
+
+                    <a href="page5.html">
+                        <li> Coding Questions </li>
+                    </a>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="navbar-menu-toggle" onclick="shownavbar()">
+            <i class="bi bi-list"></i>
+        </div>
+
+    </nav>
+
+    <!--Side Navbar-->
+    <aside class="side-navbar">
+        <p class="cross-symbol" onclick="closenavbar()"> <i class="fa fa-times" aria-hidden="true"></i> </p>
+
+        <div class="side-navbar-links">
+            <p class="side-navbar-link"> <i class="fas fa-search"></i> <a href="index.html"> Overview </a> </p>
+            <p class="side-navbar-link"> <i class="fa-brands fa-react"></i> <a href="page2.html"> React Basics </a> </p>
+            <p class="side-navbar-link"> <i class="fa-solid fa-car"></i> <a href="page3.html"> Hooks </a>
+            </p>
+            <p class="side-navbar-link"> <i class="fa-solid fa-tractor"></i> <a href="page4.html">
+                    Advanced </a>
+            </p>
+            <p class="side-navbar-link"> <i class="fa-solid fa-building"></i> <a href="page5.html"> Coding Questions
+                </a> </p>
+        </div>
+    </aside>
+
+    <!-- Home Header -->
+    <header id="top" class="slider-container">
+        <div class="slider">
+
+            <!-- Slide 1 -->
+            <div class="slide slide-1">
+                <div class="slide-content">
+                    <div class="text-content" style="text-align: left;">
+                        <h4 class="text-uppercase">Master the Fundamentals</h4>
+                        <h1>React Interview Questions for Beginners</h1>
+                        <p>
+                            Start your React interview preparation with clear explanations of core concepts
+                            like components, JSX, props, and state.
+                            Designed for freshers and entry-level developers to build strong React foundations
+                            and confidently face technical interviews.
+                        </p>
+                        <a href="#" style="text-decoration: none;">
+                            <button class="btn-explore mt-0 mt-md-3">Explore Beginner Questions</button>
+                        </a>
+                    </div>
+
+                    <div class="image-content">
+                        <img src="asset/img/1.png" alt="Master the Fundamentals">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="slide slide-2">
+                <div class="slide-content">
+                    <div class="image-content">
+                        <img src="asset/img/2.png" alt="Gold Bullion">
+                    </div>
+
+                    <div class="text-content" style="text-align: right;">
+                        <h4 class="text-uppercase">Level Up Your Skills</h4>
+                        <h1>Intermediate & Advanced React Questions</h1>
+                        <p>
+                            Deep dive into advanced React topics such as Hooks, Context API,
+                            performance optimization, state management, and real-world patterns.
+                            Perfect for developers with experience aiming for mid-level and senior roles.
+                        </p>
+                        <a href="#" style="text-decoration: none;">
+                            <button class="btn-explore mt-0 mt-md-3">Explore Advanced Questions</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="slide slide-3">
+                <div class="slide-content">
+                    <div class="text-content" style="text-align: left;">
+                        <h4 class="text-uppercase">Crack Real Interviews</h4>
+                        <h1>React Coding & Scenario-Based Questions</h1>
+                        <p>
+                            Prepare for real-world React interviews with practical coding questions,
+                            problem-solving scenarios, and common interview challenges.
+                            Learn how to explain your approach clearly and write clean, optimized React code.
+                        </p>
+                        <a href="#" style="text-decoration: none;">
+                            <button class="btn-explore mt-0 mt-md-3">Practice Coding Questions</button>
+                        </a>
+                    </div>
+
+                    <div class="image-content">
+                        <img src="asset/img/3.png" alt="Gold Bullion">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Navigation Arrows -->
+        <div class="arrow arrow-left"><i class="bi bi-chevron-left"></i></div>
+        <div class="arrow arrow-right"><i class="bi bi-chevron-right"></i></div>
+
+        <!-- Dots -->
+        <div class="dots-container">
+            <span class="dot active" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+        </div>
+    </header>
+
+    <!-- Question & Answer -->
+    <div class="react-interview-question">
+        <div class="container">
+
+            <h3 class="header-title">React Interview Questions</h3>
+
+            <!-- Question 1 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans1">
+                    <span class="question-number">1</span>
+                    <h2 class="question-text">What is the difference between a functional component and a class
+                        component?
+                    </h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans1">
+                    <p>Key differences in 2025 perspective:</p>
+                    <ul>
+                        <li>Functional components are functions — simpler, less boilerplate</li>
+                        <li>Class components use <code>this</code>, lifecycle methods, error boundaries</li>
+                        <li>Today almost all new code uses functional components + Hooks</li>
+                        <li>Class components still needed mainly for <strong>error boundaries</strong></li>
+                        <li>Functional components + <code>useEffect</code> replaced most lifecycle methods</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans2">
+                    <span class="question-number">2</span>
+                    <h2 class="question-text">Explain useEffect cleanup function. When is it called?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans2">
+                    <p>The cleanup function inside <code>useEffect</code> runs:</p>
+                    <ul>
+                        <li>Before the next effect runs (when dependencies change)</li>
+                        <li>After the component unmounts</li>
+                    </ul>
+                    <p>Common use cases:</p>
+                    <ul>
+                        <li>Clear interval / timeout</li>
+                        <li>Remove event listeners</li>
+                        <li>Cancel fetch / axios / subscription</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans3">
+                    <span class="question-number">3</span>
+                    <h2 class="question-text">What is the purpose of React.memo()?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans3">
+                    <p><code>React.memo()</code> is a higher-order component that memoizes a functional component — it
+                        prevents re-renders when props are shallow-equal.</p>
+                    <p>Used for:</p>
+                    <ul>
+                        <li>Pure UI components that receive the same props frequently</li>
+                        <li>List items in large lists</li>
+                        <li>Components inside frequently updating parents</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans4">
+                    <span class="question-number">4</span>
+                    <h2 class="question-text">What happens when you call setState twice in the same event handler?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans4">
+                    <p>In modern React (with automatic batching since React 18):</p>
+                    <ul>
+                        <li>Multiple <code>setState</code> / <code>useState</code> calls inside event handlers,
+                            timeouts,
+                            promises → batched into <strong>one render</strong></li>
+                    </ul>
+                    <p>Before React 18 (or in some async cases):</p>
+                    <ul>
+                        <li>Only the last update was applied (if not using functional update)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans5">
+                    <span class="question-number">5</span>
+                    <h2 class="question-text">Difference between useCallback and useMemo?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans5">
+                    <table class="table table-dark table-bordered table-sm mt-3">
+                        <thead>
+                            <tr>
+                                <th>Hook</th>
+                                <th>Returns</th>
+                                <th>Use when you want to memoize</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>useCallback</code></td>
+                                <td>memoized <strong>function</strong></td>
+                                <td>passing callbacks to child components (prevents re-creation)</td>
+                            </tr>
+                            <tr>
+                                <td><code>useMemo</code></td>
+                                <td>memoized <strong>value</strong></td>
+                                <td>expensive calculations, derived data, objects/arrays</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans6">
+                    <span class="question-number">6</span>
+                    <h2 class="question-text">What are custom hooks? Give a real-world example.</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans6">
+                    <p>Custom hooks are functions that start with "use" and can call other hooks.</p>
+                    <p>Popular real examples:</p>
+                    <ul>
+                        <li><code>useFetch</code> / <code>useApi</code></li>
+                        <li><code>useLocalStorage</code></li>
+                        <li><code>useWindowSize</code> / <code>useMediaQuery</code></li>
+                        <li><code>useAuth</code> / <code>useUser</code></li>
+                        <li><code>useForm</code> (with validation)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans7">
+                    <span class="question-number">7</span>
+                    <h2 class="question-text">Explain React Portals. When would you use them?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans7">
+                    <p>Portals let you render children into a DOM node that exists outside the parent component's
+                        hierarchy.
+                    </p>
+                    <p>Common use cases:</p>
+                    <ul>
+                        <li>Modals / dialogs</li>
+                        <li>Tooltips</li>
+                        <li>Popovers</li>
+                        <li>Context menus</li>
+                    </ul>
+                    <p>Typical usage: <code>createPortal(children, domNode)</code></p>
+                </div>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans8">
+                    <span class="question-number">8</span>
+                    <h2 class="question-text">What is Suspense and lazy loading in React?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans8">
+                    <p><code>React.lazy()</code> + <code>&lt;Suspense&gt;</code> enables code-splitting:</p>
+                    <pre><code>const Home = React.lazy(() => import('./Home'));</code></pre>
+                    <p>Usage:</p>
+                    <pre><code>&lt;Suspense fallback={<Loading /&gt;}&gt; &lt;Home /&gt; &lt;/Suspense&gt;</code></pre>
+                </div>
+            </div>
+
+            <!-- Question 9 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans9">
+                    <span class="question-number">9</span>
+                    <h2 class="question-text">How does the Context API + useContext hook work?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans9">
+                    <p>Context provides a way to pass data through the component tree without props drilling.</p>
+                    <p>Modern pattern (with hook):</p>
+                    <ul>
+                        <li><code>const ThemeContext = createContext()</code></li>
+                        <li><code>&lt;ThemeContext.Provider value={theme}&gt;</code></li>
+                        <li><code>const theme = useContext(ThemeContext)</code></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Question 10 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans10">
+                    <span class="question-number">10</span>
+                    <h2 class="question-text">What are the main rules of Hooks?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans10">
+                    <ol>
+                        <li>Only call Hooks at the top level (not inside loops, conditions, nested functions)</li>
+                        <li>Only call Hooks from React function components (or custom Hooks)</li>
+                        <li>ESLint plugin <code>eslint-plugin-react-hooks</code> enforces these rules</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- Question 11 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans11">
+                    <span class="question-number">11</span>
+                    <h2 class="question-text">What is the virtual DOM and why is it faster than direct DOM manipulation?
+                    </h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans11">
+                    <p>Virtual DOM is a lightweight in-memory representation of the real DOM.</p>
+                    <p>React process:</p>
+                    <ol>
+                        <li>State/props change → new virtual DOM tree created</li>
+                        <li>Diffing (reconciliation) compares old vs new virtual DOM</li>
+                        <li>Only minimal changes are applied to real DOM</li>
+                    </ol>
+                    <p>Why faster: batch updates + fewer expensive real DOM operations.</p>
+                </div>
+            </div>
+
+            <!-- Question 12 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans12">
+                    <span class="question-number">12</span>
+                    <h2 class="question-text">Explain the reconciliation process in React.</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans12">
+                    <p>Reconciliation = React's process of updating the DOM when component state/props change.</p>
+                    <ul>
+                        <li>Compares old & new virtual DOM trees (diffing algorithm)</li>
+                        <li>Uses heuristics: element type, key, position</li>
+                        <li>When types differ → replace whole subtree</li>
+                        <li>Same type → update attributes & recurse children</li>
+                        <li>Keys help match children across renders efficiently</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Question 13 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans13">
+                    <span class="question-number">13</span>
+                    <h2 class="question-text">What are keys in React lists and why are they important?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans13">
+                    <p><code>key</code> is a special string attribute that helps React identify which items changed,
+                        added, or removed.</p>
+                    <p>Without stable keys React may:</p>
+                    <ul>
+                        <li>Re-render entire list unnecessarily</li>
+                        <li>Lose component state (input focus, animations…)</li>
+                        <li>Show wrong data during updates</li>
+                    </ul>
+                    <p>Best practice: use stable, unique ID from data (not index).</p>
+                </div>
+            </div>
+
+            <!-- Question 14 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans14">
+                    <span class="question-number">14</span>
+                    <h2 class="question-text">What is prop drilling and how can we avoid it?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans14">
+                    <p>Passing props through many levels of components even when intermediate components don’t use them.
+                    </p>
+                    <p>Solutions (2025 perspective):</p>
+                    <ol>
+                        <li><strong>Context API</strong> + <code>useContext</code> (most common)</li>
+                        <li>Component composition (children, render props)</li>
+                        <li>State management libraries: Zustand, Jotai, Recoil, Redux Toolkit</li>
+                        <li>Props drilling is acceptable for depth ≤ 3–4 levels</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- Question 15 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans15">
+                    <span class="question-number">15</span>
+                    <h2 class="question-text">Difference between controlled vs uncontrolled components?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans15">
+                    <table class="table table-dark table-bordered table-sm mt-3">
+                        <thead>
+                            <tr>
+                                <th>Aspect</th>
+                                <th>Controlled</th>
+                                <th>Uncontrolled</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>State location</td>
+                                <td>React state</td>
+                                <td>DOM itself</td>
+                            </tr>
+                            <tr>
+                                <td>Value prop</td>
+                                <td><code>value={state}</code></td>
+                                <td><code>defaultValue</code></td>
+                            </tr>
+                            <tr>
+                                <td>onChange</td>
+                                <td>Required to update state</td>
+                                <td>Optional</td>
+                            </tr>
+                            <tr>
+                                <td>Use case</td>
+                                <td>Validation, formatting, sync</td>
+                                <td>Simple forms, legacy integration</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>Modern React → prefer controlled components.</p>
+                </div>
+            </div>
+
+            <!-- Question 16 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans16">
+                    <span class="question-number">16</span>
+                    <h2 class="question-text">What does lifting state up mean?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans16">
+                    <p>Moving shared state to the closest common ancestor component so multiple child components can
+                        share and update the same state.</p>
+                    <p>Example: two input fields that should show the same converted value (Celsius ↔ Fahrenheit).</p>
+                </div>
+            </div>
+
+            <!-- Question 17 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans17">
+                    <span class="question-number">17</span>
+                    <h2 class="question-text">Explain the component lifecycle in functional components (with Hooks).
+                    </h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans17">
+                    <ul>
+                        <li>Mount → <code>useEffect(() ⇒ { … }, [])</code></li>
+                        <li>Update → <code>useEffect(() ⇒ { … }, [dep])</code></li>
+                        <li>Unmount → cleanup function returned from <code>useEffect</code></li>
+                        <li>Every render → <code>useEffect(() ⇒ { … })</code> (no deps)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Question 18 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans18">
+                    <span class="question-number">18</span>
+                    <h2 class="question-text">What is the children prop and how is it used?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans18">
+                    <p><code>children</code> is a special prop containing content passed between opening and closing JSX
+                        tags.</p>
+                    <pre><code>&lt;Card&gt;
+  &lt;h2&gt;Title&lt;/h2&gt;
+  &lt;p&gt;Content here&lt;/p&gt;
+&lt;/Card&gt;</code></pre>
+                    <p>Very common in layout/wrapper components (Layout, Card, Modal, etc.).</p>
+                </div>
+            </div>
+
+            <!-- Question 19 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans19">
+                    <span class="question-number">19</span>
+                    <h2 class="question-text">What are fragments in React? Why do we use them?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans19">
+                    <p><code>&lt;&gt;&lt;/&gt;</code> or <code>&lt;React.Fragment&gt;</code> lets you group multiple
+                        elements without adding extra DOM node.</p>
+                    <p>Common use cases:</p>
+                    <ul>
+                        <li>Returning multiple elements from component</li>
+                        <li>Inside map() → avoid wrapper <code>&lt;div&gt;</code></li>
+                        <li>Key only needed on fragment when inside list: <code>&lt;Fragment key={id}&gt;</code></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Question 20 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans20">
+                    <span class="question-number">20</span>
+                    <h2 class="question-text">What is the difference between useReducer and Redux?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans20">
+                    <table class="table table-dark table-bordered table-sm mt-3">
+                        <thead>
+                            <tr>
+                                <th>Feature</th>
+                                <th>useReducer</th>
+                                <th>Redux / RTK</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Scope</td>
+                                <td>Single component / small feature</td>
+                                <td>App-wide or large slices</td>
+                            </tr>
+                            <tr>
+                                <td>Boilerplate</td>
+                                <td>Low</td>
+                                <td>Higher (even with RTK)</td>
+                            </tr>
+                            <tr>
+                                <td>Middleware</td>
+                                <td>No built-in</td>
+                                <td>Yes (thunk, saga…)</td>
+                            </tr>
+                            <tr>
+                                <td>DevTools</td>
+                                <td>Basic</td>
+                                <td>Excellent time-travel</td>
+                            </tr>
+                            <tr>
+                                <td>Async logic</td>
+                                <td>Inside useEffect or custom hook</td>
+                                <td>Thunks / RTK Query</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p>2025 trend: useReducer + Context / Zustand for medium apps, RTK Query for data-heavy apps.</p>
+                </div>
+            </div>
+
+            <!-- Question 21 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans21">
+                    <span class="question-number">21</span>
+                    <h2 class="question-text">What is React Server Components (RSC)?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans21">
+                    <p>Introduced in Next.js 13+, React Server Components are components that render only on the server.
+                    </p>
+                    <p>Key points:</p>
+                    <ul>
+                        <li>No hydration → smaller client bundle</li>
+                        <li>Direct access to backend resources (DB, files…)</li>
+                        <li>Can’t use state, effects, browser APIs</li>
+                        <li>Can be mixed with client components (“use client” directive)</li>
+                    </ul>
+                    <p>Big performance & DX improvement in data-heavy apps.</p>
+                </div>
+            </div>
+
+            <!-- Question 22 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans22">
+                    <span class="question-number">22</span>
+                    <h2 class="question-text">What problem does useTransition solve?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans22">
+                    <p><code>useTransition</code> marks state updates as non-urgent (“transition”).</p>
+                    <p>Allows React to:</p>
+                    <ul>
+                        <li>Keep showing old UI while preparing new one</li>
+                        <li>Interrupt low-priority updates for high-priority ones (typing, clicks)</li>
+                    </ul>
+                    <p>Common pattern:</p>
+                    <pre><code>const [isPending, startTransition] = useTransition();
+startTransition(() ⇒ { setTab(newTab); });</code></pre>
+                </div>
+            </div>
+
+            <!-- Question 23 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans23">
+                    <span class="question-number">23</span>
+                    <h2 class="question-text">Explain the useDeferredValue hook.</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans23">
+                    <p>Defers a value update until more important updates are done.</p>
+                    <p>Typical use case: search input → expensive filtered list</p>
+                    <pre><code>const deferredQuery = useDeferredValue(query);
+&lt;HeavyList data={filtered(deferredQuery)} /&gt;</code></pre>
+                    <p>Similar goal to <code>useTransition</code>, but for values instead of state updates.</p>
+                </div>
+            </div>
+
+            <!-- Question 24 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans24">
+                    <span class="question-number">24</span>
+                    <h2 class="question-text">What are error boundaries? Do they work in functional components?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans24">
+                    <p>Error boundaries catch JavaScript errors in child component tree and display fallback UI.</p>
+                    <p>Implemented using class components with:</p>
+                    <ul>
+                        <li><code>static getDerivedStateFromError()</code></li>
+                        <li><code>componentDidCatch()</code></li>
+                    </ul>
+                    <p>2025 status: still no native functional error boundary → use class component or libraries (e.g.
+                        react-error-boundary).</p>
+                </div>
+            </div>
+
+            <!-- Question 25 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans25">
+                    <span class="question-number">25</span>
+                    <h2 class="question-text">What is the purpose of useImperativeHandle + forwardRef?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans25">
+                    <p>Allows parent to directly call methods on child component instance (imperative API).</p>
+                    <p>Common cases:</p>
+                    <ul>
+                        <li>Focus input from parent</li>
+                        <li>Trigger animation in child</li>
+                        <li>Scroll to position</li>
+                    </ul>
+                    <p>Example:</p>
+                    <pre><code>const MyInput = forwardRef((props, ref) ⇒ {
+  const inputRef = useRef();
+  useImperativeHandle(ref, () ⇒ ({ focus: () ⇒ inputRef.current.focus() }));
+  return &lt;input ref={inputRef} /&gt;;
+});</code></pre>
+                </div>
+            </div>
+
+            <!-- Question 26 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans26">
+                    <span class="question-number">26</span>
+                    <h2 class="question-text">How would you optimize a slow React application?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans26">
+                    <ol>
+                        <li>Profile with React DevTools Profiler</li>
+                        <li>Prevent unnecessary re-renders (<code>React.memo</code>, <code>useMemo</code>,
+                            <code>useCallback</code>)
+                        </li>
+                        <li>Use production build</li>
+                        <li>Code-splitting + lazy + Suspense</li>
+                        <li>Virtualize long lists (react-window, react-virtualized)</li>
+                        <li>Server Components / streaming SSR (when using Next.js)</li>
+                        <li>Optimize images & assets</li>
+                        <li>Avoid anonymous functions in render</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- Question 27 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans27">
+                    <span class="question-number">27</span>
+                    <h2 class="question-text">What is hydration in React?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans27">
+                    <p>Hydration = attaching event listeners and making server-rendered HTML interactive on the client.
+                    </p>
+                    <p>React compares server-rendered markup with what client would render → if mismatch → warning.</p>
+                    <p>Common hydration errors: browser-specific code in SSR, dates, random values, browser APIs.</p>
+                </div>
+            </div>
+
+            <!-- Question 28 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans28">
+                    <span class="question-number">28</span>
+                    <h2 class="question-text">Explain the StrictMode component.</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans28">
+                    <p><code>&lt;React.StrictMode&gt;</code> enables extra development-time checks:</p>
+                    <ul>
+                        <li>Double-invokes effects & render in dev mode (detects impure functions)</li>
+                        <li>Checks for deprecated APIs</li>
+                        <li>Detects unsafe lifecycles</li>
+                        <li>Warns about string refs</li>
+                    </ul>
+                    <p>Should be used in development (usually wraps whole app).</p>
+                </div>
+            </div>
+
+            <!-- Question 29 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans29">
+                    <span class="question-number">29</span>
+                    <h2 class="question-text">What are the main advantages of using TypeScript with React?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans29">
+                    <ul>
+                        <li>Props & state type safety</li>
+                        <li>Better refactoring & autocomplete</li>
+                        <li>Catches many bugs at compile time</li>
+                        <li>Self-documenting components</li>
+                        <li>Easier to work with third-party libraries (good .d.ts files)</li>
+                        <li>Generics for reusable components (e.g. <code>List&lt;T&gt;</code>)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Question 30 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans30">
+                    <span class="question-number">30</span>
+                    <h2 class="question-text">What is zustand / jotai and when would you choose them over Redux?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans30">
+                    <p>Modern lightweight state managers:</p>
+                    <ul>
+                        <li><strong>Zustand</strong> — single store, hooks-based, very simple API</li>
+                        <li><strong>Jotai</strong> — atomic state (many small pieces), bottom-up approach</li>
+                    </ul>
+                    <p>Choose them when:</p>
+                    <ul>
+                        <li>App is medium size</li>
+                        <li>You don’t need heavy middleware</li>
+                        <li>Want minimal boilerplate</li>
+                        <li>Like hooks philosophy</li>
+                    </ul>
+                    <p>Redux Toolkit still great for large teams, complex async flows, Redux DevTools requirement.</p>
+                </div>
+            </div>
+
+            <!-- Question 31 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans31">
+                    <span class="question-number">31</span>
+                    <h2 class="question-text">What is the difference between createRef and useRef?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans31">
+                    <table class="table table-dark table-bordered table-sm mt-3">
+                        <thead>
+                            <tr>
+                                <th>Aspect</th>
+                                <th>createRef</th>
+                                <th>useRef</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Where used</td>
+                                <td>Class components</td>
+                                <td>Functional components</td>
+                            </tr>
+                            <tr>
+                                <td>Creation</td>
+                                <td>Outside render: <code>ref = createRef()</code></td>
+                                <td>Inside component: <code>const ref = useRef()</code></td>
+                            </tr>
+                            <tr>
+                                <td>Re-creation</td>
+                                <td>One instance per component instance</td>
+                                <td>Persists across re-renders</td>
+                            </tr>
+                            <tr>
+                                <td>Common use</td>
+                                <td>Legacy class code</td>
+                                <td>DOM access, storing mutable values</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Question 32 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans32">
+                    <span class="question-number">32</span>
+                    <h2 class="question-text">How do you handle forms in React? Mention common patterns.</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans32">
+                    <p>Main approaches:</p>
+                    <ol>
+                        <li><strong>Controlled components</strong> (most common): store all values in state</li>
+                        <li><strong>Form libraries</strong>: React Hook Form, Formik, Zod + react-hook-form</li>
+                        <li><strong>Uncontrolled + refs</strong>: only for very simple forms</li>
+                        <li><strong>Native HTML form + onSubmit</strong>: for server-rendered / progressive forms</li>
+                    </ol>
+                    <p>2025 trend: React Hook Form + Zod for validation → minimal re-renders, great performance.</p>
+                </div>
+            </div>
+
+            <!-- Question 33 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans33">
+                    <span class="question-number">33</span>
+                    <h2 class="question-text">What is the purpose of useLayoutEffect vs useEffect?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans33">
+                    <ul>
+                        <li><code>useEffect</code> — runs asynchronously after paint → better for most side effects</li>
+                        <li><code>useLayoutEffect</code> — runs synchronously after DOM mutations but before browser
+                            paints → prevents flicker</li>
+                    </ul>
+                    <p>Use <code>useLayoutEffect</code> when you need to measure DOM (getBoundingClientRect, scroll
+                        position) before user sees changes.</p>
+                    <p>Warning: can hurt performance — prefer <code>useEffect</code> when possible.</p>
+                </div>
+            </div>
+
+            <!-- Question 34 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans34">
+                    <span class="question-number">34</span>
+                    <h2 class="question-text">Explain React's concurrent rendering features.</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans34">
+                    <p>Introduced in React 18 — allows React to interrupt rendering for higher-priority work.</p>
+                    <p>Key APIs:</p>
+                    <ul>
+                        <li><code>startTransition</code> / <code>useTransition</code></li>
+                        <li><code>useDeferredValue</code></li>
+                        <li>Automatic batching of updates</li>
+                        <li>Streaming server rendering</li>
+                    </ul>
+                    <p>Goal: keep UI responsive even during heavy updates.</p>
+                </div>
+            </div>
+
+            <!-- Question 35 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans35">
+                    <span class="question-number">35</span>
+                    <h2 class="question-text">What are the different ways to style components in React?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans35">
+                    <ul>
+                        <li>CSS files (global / module)</li>
+                        <li>Styled-components / Emotion</li>
+                        <li>Tailwind CSS / UnoCSS</li>
+                        <li>CSS-in-JS (vanilla-extract, Stitches, Panda CSS)</li>
+                        <li>Inline styles</li>
+                        <li>CSS Modules</li>
+                        <li>Sass / Less</li>
+                    </ul>
+                    <p>2025 popular choices: Tailwind + shadcn/ui, or Panda CSS / vanilla-extract for type-safe styling.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Question 36 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans36">
+                    <span class="question-number">36</span>
+                    <h2 class="question-text">What is React Query (TanStack Query) and why is it useful?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans36">
+                    <p>Powerful library for managing server-state (API data).</p>
+                    <p>Features:</p>
+                    <ul>
+                        <li>Automatic caching</li>
+                        <li>Background refetching</li>
+                        <li>Stale-while-revalidate</li>
+                        <li>Pagination, infinite scroll</li>
+                        <li>Mutations with optimistic updates</li>
+                        <li>Devtools</li>
+                    </ul>
+                    <p>Often replaces Redux + thunks/sagas for data fetching.</p>
+                </div>
+            </div>
+
+            <!-- Question 37 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans37">
+                    <span class="question-number">37</span>
+                    <h2 class="question-text">How do you implement infinite scrolling in React?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans37">
+                    <p>Common approaches:</p>
+                    <ol>
+                        <li><strong>TanStack Query</strong> <code>useInfiniteQuery</code></li>
+                        <li>Intersection Observer + manual page state</li>
+                        <li>react-infinite-scroll-component library</li>
+                    </ol>
+                    <p>Basic pattern with Intersection Observer:</p>
+                    <ul>
+                        <li>Place sentinel element at bottom</li>
+                        <li>Observe it → load next page when visible</li>
+                        <li>Keep track of current page & hasMore</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Question 38 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans38">
+                    <span class="question-number">38</span>
+                    <h2 class="question-text">What is the difference between memo and useMemo?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans38">
+                    <table class="table table-dark table-bordered table-sm mt-3">
+                        <thead>
+                            <tr>
+                                <th>Hook</th>
+                                <th>Used for</th>
+                                <th>Receives</th>
+                                <th>Returns</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>React.memo</code></td>
+                                <td>Prevent component re-render</td>
+                                <td>Component</td>
+                                <td>Memoized component</td>
+                            </tr>
+                            <tr>
+                                <td><code>useMemo</code></td>
+                                <td>Memoize expensive value</td>
+                                <td>Factory fn + deps</td>
+                                <td>Cached value</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Question 39 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans39">
+                    <span class="question-number">39</span>
+                    <h2 class="question-text">How do you test React components? Mention popular tools.</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans39">
+                    <p>Common testing stack:</p>
+                    <ul>
+                        <li><strong>Jest</strong> + <strong>React Testing Library</strong> (most recommended)</li>
+                        <li>Vitest (faster alternative to Jest)</li>
+                        <li>Testing Library ecosystem: <code>@testing-library/user-event</code></li>
+                        <li>Component snapshot testing (less popular now)</li>
+                        <li>MSW (Mock Service Worker) for API mocking</li>
+                    </ul>
+                    <p>Philosophy: test behavior, not implementation.</p>
+                </div>
+            </div>
+
+            <!-- Question 40 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans40">
+                    <span class="question-number">40</span>
+                    <h2 class="question-text">What are compound components? Give an example.</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans40">
+                    <p>Pattern where components work together implicitly via context.</p>
+                    <p>Example: <code>&lt;Select&gt;</code> component family</p>
+                    <pre><code>&lt;Select&gt;
+  &lt;SelectTrigger&gt;Open menu&lt;/SelectTrigger&gt;
+  &lt;SelectContent&gt;
+    &lt;SelectItem value="1"&gt;Option 1&lt;/SelectItem&gt;
+    &lt;SelectItem value="2"&gt;Option 2&lt;/SelectItem&gt;
+  &lt;/SelectContent&gt;
+&lt;/Select&gt;</code></pre>
+                    <p>Implemented using Context to share state between parts.</p>
+                </div>
+            </div>
+
+            <!-- Question 41 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans41">
+                    <span class="question-number">41</span>
+                    <h2 class="question-text">Explain optimistic updates. How would you implement one?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans41">
+                    <p>Show the final UI state immediately before the server responds, then rollback on error.</p>
+                    <p>Typical steps (e.g., like/dislike button):</p>
+                    <ol>
+                        <li>Immediately increment like count in UI</li>
+                        <li>Send request to server</li>
+                        <li>On success → keep change</li>
+                        <li>On error → revert UI to previous state</li>
+                    </ol>
+                    <p>Popular with TanStack Query <code>useMutation</code> + <code>onMutate</code> for rollback.</p>
+                </div>
+            </div>
+
+            <!-- Question 42 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans42">
+                    <span class="question-number">42</span>
+                    <h2 class="question-text">What are render props? Are they still used?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans42">
+                    <p>Pattern where a component accepts a function as prop that returns JSX.</p>
+                    <pre><code>&lt;Mouse render={mouse =&gt; (
+  &lt;p&gt;The mouse is at {mouse.x}, {mouse.y}&lt;/p&gt;
+)} /&gt;</code></pre>
+                    <p>Mostly replaced by custom hooks in modern React, but still useful in some library patterns (e.g.
+                        react-router v5, older code).</p>
+                </div>
+            </div>
+
+            <!-- Question 43 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans43">
+                    <span class="question-number">43</span>
+                    <h2 class="question-text">How do you handle global state without Redux?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans43">
+                    <p>Popular alternatives (2025):</p>
+                    <ul>
+                        <li><strong>Zustand</strong> — simple, tiny</li>
+                        <li><strong>Jotai</strong> — atomic state</li>
+                        <li><strong>Recoil</strong> — Facebook’s solution</li>
+                        <li>Context + useReducer</li>
+                        <li>TanStack Query (for server state)</li>
+                        <li>React Query + Zustand combo</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Question 44 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans44">
+                    <span class="question-number">44</span>
+                    <h2 class="question-text">What is the role of keys in React when conditionally rendering components?
+                    </h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans44">
+                    <p>When using ternary / && to show/hide components, React may reuse the same component instance if
+                        the type is the same.</p>
+                    <p>This can cause bugs (state preserved unexpectedly).</p>
+                    <p>Solution: add <code>key</code> that changes when condition changes:</p>
+                    <pre><code>{showLogin ? (
+  &lt;AuthForm key="login" mode="login" /&gt;
+) : (
+  &lt;AuthForm key="register" mode="register" /&gt;
+)}</code></pre>
+                </div>
+            </div>
+
+            <!-- Question 45 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans45">
+                    <span class="question-number">45</span>
+                    <h2 class="question-text">How do you prevent memory leaks in React?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans45">
+                    <ul>
+                        <li>Clean up subscriptions / intervals in <code>useEffect</code> return</li>
+                        <li>Cancel fetch requests (AbortController)</li>
+                        <li>Remove event listeners</li>
+                        <li>Avoid storing large objects in state/refs unnecessarily</li>
+                        <li>Use cleanup functions in custom hooks</li>
+                        <li>Be careful with closures capturing large data</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Question 46 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans46">
+                    <span class="question-number">46</span>
+                    <h2 class="question-text">What is the benefit of using Next.js over Create React App?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans46">
+                    <ul>
+                        <li>Server-side rendering (SSR) / Static Site Generation (SSG)</li>
+                        <li>Built-in routing</li>
+                        <li>Image optimization</li>
+                        <li>API routes</li>
+                        <li>React Server Components support</li>
+                        <li>Automatic code splitting</li>
+                        <li>Incremental Static Regeneration (ISR)</li>
+                        <li>Easier SEO & performance</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Question 47 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans47">
+                    <span class="question-number">47</span>
+                    <h2 class="question-text">Explain the concept of "render-as-you-fetch" pattern.</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans47">
+                    <p>Instead of fetch-then-render, start fetching as early as possible and render when data arrives.
+                    </p>
+                    <p>With Suspense + React 18:</p>
+                    <ul>
+                        <li>Wrap data-fetching component in <code>&lt;Suspense&gt;</code></li>
+                        <li>Use libraries like Relay or Next.js App Router that support it</li>
+                        <li>Improves perceived performance</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Question 48 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans48">
+                    <span class="question-number">48</span>
+                    <h2 class="question-text">What are the common performance pitfalls in React?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans48">
+                    <ul>
+                        <li>Creating new objects/arrays/functions on every render</li>
+                        <li>Passing new object literals as props</li>
+                        <li>Heavy computations in render</li>
+                        <li>Deeply nested component trees</li>
+                        <li>Unnecessary re-renders of large lists</li>
+                        <li>Large images without optimization</li>
+                        <li>Missing <code>key</code> in lists</li>
+                        <li>Overusing Context (causes re-renders)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Question 49 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans49">
+                    <span class="question-number">49</span>
+                    <h2 class="question-text">How do you share logic between class and functional components?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans49">
+                    <p>Best approach: extract logic into custom hooks.</p>
+                    <p>Older approach:</p>
+                    <ul>
+                        <li>Higher-Order Components (HOC)</li>
+                        <li>Render Props</li>
+                    </ul>
+                    <p>Modern React: prefer custom hooks → easier to test, compose and tree-shake.</p>
+                </div>
+            </div>
+
+            <!-- Question 50 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans50">
+                    <span class="question-number">50</span>
+                    <h2 class="question-text">What’s new in React 19 (as of early 2026)?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans50">
+                    <p>Key features (based on release candidate / early 2026):</p>
+                    <ul>
+                        <li>Actions – simplified form handling (<code>useActionState</code>)</li>
+                        <li>Improved Suspense & error handling</li>
+                        <li>use() hook for reading resources</li>
+                        <li>React Compiler (Opt-in automatic memoization)</li>
+                        <li>Better hydration error recovery</li>
+                        <li>useOptimistic hook</li>
+                    </ul>
+                    <p>Many features aim to reduce manual memoization and improve forms/data mutations.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="loan-footer px-2">
+        <div class="container">
+            <div class="row">
+
+                <!-- About React -->
+                <div class="col-md-4 col-sm-12 mb-4">
+                    <h5 class="fw-bold">React Interview Guide</h5>
+                    <p class="pe-0 pe-md-3">
+                        A complete React interview preparation platform designed to help developers
+                        understand core concepts, hooks, component architecture, and real-world use cases.
+                        Learn React step by step with clear explanations, practical examples,
+                        and commonly asked interview questions for freshers and experienced professionals.
+                    </p>
+                </div>
+
+                <!-- React Topics -->
+                <div class="col-md-2 col-6 mb-4">
+                    <h5 class="fw-bold">React Topics</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">React Basics</a></li>
+                        <li><a href="#">JSX & Components</a></li>
+                        <li><a href="#">Props & State</a></li>
+                        <li><a href="#">Hooks</a></li>
+                        <li><a href="#">Lifecycle Methods</a></li>
+                    </ul>
+                </div>
+
+                <!-- Interview Prep -->
+                <div class="col-md-2 col-6 mb-4">
+                    <h5 class="fw-bold">Interview Prep</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Beginner Questions</a></li>
+                        <li><a href="#">Intermediate Questions</a></li>
+                        <li><a href="#">Advanced Questions</a></li>
+                        <li><a href="#">Coding Questions</a></li>
+                        <li><a href="#">Real Interview Q&A</a></li>
+                    </ul>
+                </div>
+
+                <!-- Learning Resources -->
+                <div class="col-md-2 col-6 mb-4">
+                    <h5 class="fw-bold">Learning Resources</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">React Examples</a></li>
+                        <li><a href="#">Mini Projects</a></li>
+                        <li><a href="#">Best Practices</a></li>
+                        <li><a href="#">Performance Tips</a></li>
+                        <li><a href="#">Error Handling</a></li>
+                    </ul>
+                </div>
+
+                <!-- Career Tips -->
+                <div class="col-md-2 col-6 mb-4">
+                    <h5 class="fw-bold">Career Tips</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Frontend Roadmap</a></li>
+                        <li><a href="#">Resume Tips</a></li>
+                        <li><a href="#">Project Ideas</a></li>
+                        <li><a href="#">Interview Tips</a></li>
+                        <li><a href="#">React Job Roles</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Bottom Footer -->
+            <div class="footer-bottom text-center">
+                <p><i class="fa-regular fa-copyright"></i> 2026 React Interview Guide. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="asset/js/script.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- Question & Answer JS-->
+    <script>
+        document.querySelectorAll('.question-header').forEach(header => {
+            header.addEventListener('click', () => {
+                header.classList.toggle('active');
+            });
+        });
+    </script>
+
+</body>
+
+</html>

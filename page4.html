@@ -1,0 +1,1214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>React Interview Questions & Answers | Beginner to Advanced</title>
+
+    <meta name="description"
+        content="Prepare for React interviews with the latest React interview questions and answers. Covers beginner, intermediate, and advanced React concepts, hooks, components, state, props, and performance optimization." />
+
+    <meta name="keywords"
+        content="react interview questions, react js interview questions, react interview questions and answers, react hooks interview questions, react coding interview, frontend interview questions, javascript react interview" />
+
+    <meta name="author" content="React Interview Guide">
+    <meta name="robots" content="index, follow">
+
+    <!--My css-->
+    <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="icon" href="assets/img/company-logo.png" type="image/png">
+
+    <!--Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+
+<body style="background-color: #323232;">
+
+    <!-- NavBar -->
+    <nav id="Navbar" class="navbar px-3 px-md-4 py-md-3">
+
+        <div class="website-name text-white">
+            <div class="logo-img">
+                <i class="fa-brands fa-react"></i>
+            </div>
+
+            <a href="index.html" style="text-decoration: none;">
+                <h2 class="logo-style ps-3"> React Interview Guide </h2>
+            </a>
+        </div>
+
+        <div class="navbar-item">
+            <div class="navbar-menu pe-5">
+                <ul class="navbar-menu-links text-white">
+                    <a href="index.html">
+                        <li> Overview </li>
+                    </a>
+
+                    <a href="page2.html">
+                        <li> React Basics </li>
+                    </a>
+
+                    <a href="page3.html">
+                        <li> Hooks </li>
+                    </a>
+
+                    <a href="page4.html">
+                        <li> Advanced </li>
+                    </a>
+
+                    <a href="page5.html">
+                        <li> Coding Questions </li>
+                    </a>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="navbar-menu-toggle" onclick="shownavbar()">
+            <i class="bi bi-list"></i>
+        </div>
+
+    </nav>
+
+    <!--Side Navbar-->
+    <aside class="side-navbar">
+        <p class="cross-symbol" onclick="closenavbar()"> <i class="fa fa-times" aria-hidden="true"></i> </p>
+
+        <div class="side-navbar-links">
+            <p class="side-navbar-link"> <i class="fas fa-search"></i> <a href="index.html"> Overview </a> </p>
+            <p class="side-navbar-link"> <i class="fa-brands fa-react"></i> <a href="page2.html"> React Basics </a> </p>
+            <p class="side-navbar-link"> <i class="fa-solid fa-car"></i> <a href="page3.html"> Hooks </a>
+            </p>
+            <p class="side-navbar-link"> <i class="fa-solid fa-tractor"></i> <a href="page4.html">
+                    Advanced </a>
+            </p>
+            <p class="side-navbar-link"> <i class="fa-solid fa-building"></i> <a href="page5.html"> Coding Questions
+                </a> </p>
+        </div>
+    </aside>
+
+    <!-- Page Header -->
+    <section class="page-header px-3">
+        <div class="page-header-content">
+            <h4>ADVANCED REACT</h4>
+            <h1>Deep Dive into Advanced React Concepts</h1>
+        </div>
+    </section>
+
+    <!-- Question & Answer -->
+    <div class="react-interview-question">
+        <div class="container">
+
+            <h3 class="header-title">Advanced React Concepts – Interview Q&A</h3>
+
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans151">
+                    <span class="question-number">151</span>
+                    <h2 class="question-text">What is the React Fiber architecture? Main goals?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans151">
+                    <p>Fiber is React's reimplementation of the core reconciler (since React 16).</p>
+                    <p>Main goals:</p>
+                    <ul>
+                        <li>Incremental rendering (ability to pause/resume/prioritize work)</li>
+                        <li>Better support for animations & gestures</li>
+                        <li>Concurrent mode foundation</li>
+                        <li>Improved error boundaries & scheduling</li>
+                    </ul>
+                    <p>Work units are called "fibers" — linked list instead of stack recursion.</p>
+                </div>
+            </div>
+
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans152">
+                    <span class="question-number">152</span>
+                    <h2 class="question-text">What are lanes and priorities in React 18 concurrent mode?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans152">
+                    <p>React 18 uses a lane-based priority system instead of simple numbers.</p>
+                    <p>Higher priority lanes (e.g. user input) can interrupt lower priority work (e.g. data fetching,
+                        transitions).</p>
+                    <p>Enables features like:</p>
+                    <ul>
+                        <li>startTransition / useTransition</li>
+                        <li>useDeferredValue</li>
+                        <li>Automatic batching in all cases</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans153">
+                    <span class="question-number">153</span>
+                    <h2 class="question-text">Explain the three main phases of React rendering (legacy vs Fiber)</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans153">
+                    <p>In Fiber (React 16+):</p>
+                    <ol>
+                        <li><strong>Render phase</strong> (may be paused/resumed) — reconciliation, building fiber tree,
+                            side-effect list</li>
+                        <li><strong>Commit phase</strong> (synchronous, non-interruptible) — apply DOM changes, run
+                            layout effects</li>
+                        <li><strong>Passive effects</strong> (after paint) — run useEffect callbacks</li>
+                    </ol>
+                    <p>Legacy (pre-16): render → commit (all sync, blocking)</p>
+                </div>
+            </div>
+
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans154">
+                    <span class="question-number">154</span>
+                    <h2 class="question-text">What is tearing and how does React 18 prevent it in concurrent mode?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans154">
+                    <p>Tearing = inconsistent state view during concurrent render (one part sees old state, another sees
+                        new).</p>
+                    <p>React 18 prevents it via:</p>
+                    <ul>
+                        <li>useSyncExternalStore (for external stores)</li>
+                        <li>Consistent snapshot reads during render</li>
+                        <li>Lane-based priority & transitions</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans155">
+                    <span class="question-number">155</span>
+                    <h2 class="question-text">Difference between automatic batching in React 17 vs React 18</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans155">
+                    <table class="table table-dark table-bordered table-sm">
+                        <tr>
+                            <th>Scenario</th>
+                            <th>React 17</th>
+                            <th>React 18</th>
+                        </tr>
+                        <tr>
+                            <td>Event handlers</td>
+                            <td>batched</td>
+                            <td>batched</td>
+                        </tr>
+                        <tr>
+                            <td>Promises / setTimeout</td>
+                            <td>not batched</td>
+                            <td>batched</td>
+                        </tr>
+                        <tr>
+                            <td>Native event handlers</td>
+                            <td>not batched</td>
+                            <td>batched</td>
+                        </tr>
+                        <tr>
+                            <td>useEffect</td>
+                            <td>not batched</td>
+                            <td>batched</td>
+                        </tr>
+                    </table>
+                    <p>React 18 batches almost everything by default → fewer renders.</p>
+                </div>
+            </div>
+
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans156">
+                    <span class="question-number">156</span>
+                    <h2 class="question-text">What are React Server Components (RSC)? Key characteristics</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans156">
+                    <ul>
+                        <li>Render only on server → no client JS bundle for them</li>
+                        <li>Zero hydration cost</li>
+                        <li>Direct access to backend resources (DB, filesystem, secrets)</li>
+                        <li>Cannot use state, effects, browser APIs, event handlers</li>
+                        <li>Can be streamed to client</li>
+                        <li>Marked with <code>"use server"</code> (Next.js) or implicitly server-rendered</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans157">
+                    <span class="question-number">157</span>
+                    <h2 class="question-text">How do client and server components interact in Next.js App Router?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans157">
+                    <ul>
+                        <li>Server Components are default</li>
+                        <li>Client Components marked with <code>"use client"</code></li>
+                        <li>Server → Client: pass props (serializable only)</li>
+                        <li>Client → Server: cannot import server components directly</li>
+                        <li>Server Components can import client components (but client boundary is created)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans158">
+                    <span class="question-number">158</span>
+                    <h2 class="question-text">What is streaming SSR and Suspense boundaries in React 18/Next.js?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans158">
+                    <p>Streaming = send HTML chunks as soon as they are ready instead of waiting for whole page.</p>
+                    <p><code>&lt;Suspense&gt;</code> boundaries define fallbacks and streaming chunks:</p>
+                    <ul>
+                        <li>Non-Suspense content streams first</li>
+                        <li>Suspense-wrapped parts stream when ready (or show fallback)</li>
+                    </ul>
+                    <p>Big win for TTFB and perceived performance.</p>
+                </div>
+            </div>
+
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans159">
+                    <span class="question-number">159</span>
+                    <h2 class="question-text">Explain React Compiler (React Forget) – what does it do?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans159">
+                    <p>Automatic memoization compiler (opt-in, experimental in 2025–2026).</p>
+                    <p>Does what developers manually do with:</p>
+                    <ul>
+                        <li>React.memo</li>
+                        <li>useMemo</li>
+                        <li>useCallback</li>
+                    </ul>
+                    <p>Analyzes component code → memoizes props, state dependencies, and computations where safe.</p>
+                    <p>Goal: remove most manual memoization boilerplate.</p>
+                </div>
+            </div>
+
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans160">
+                    <span class="question-number">160</span>
+                    <h2 class="question-text">What is the most common cause of performance regressions after upgrading
+                        to React 18?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans160">
+                    <p>Strict mode double-invoking effects + render → exposes previously hidden side effects.</p>
+                    <p>Also:</p>
+                    <ul>
+                        <li>useEffect running more often due to new batching</li>
+                        <li>Stale closures in concurrent mode</li>
+                        <li>Missing cleanup functions becoming visible</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans161">
+                    <span class="question-number">161</span>
+                    <h2 class="question-text">How would you virtualize a very large list in React?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans161">
+                    <p>Use <strong>react-window</strong> or <strong>react-virtualized</strong> (or TanStack Virtual).
+                    </p>
+                    <p>Key techniques:</p>
+                    <ul>
+                        <li>Only render visible rows + small overscan buffer</li>
+                        <li>Absolute positioning</li>
+                        <li>Fixed or variable size items</li>
+                        <li>Handle scroll / resize efficiently</li>
+                    </ul>
+                    <p>Can reduce DOM nodes from 10,000 to ~30–50.</p>
+                </div>
+            </div>
+
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans162">
+                    <span class="question-number">162</span>
+                    <h2 class="question-text">What are the trade-offs of using Context vs Zustand / Jotai for global
+                        state?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans162">
+                    <table class="table table-dark table-bordered table-sm">
+                        <tr>
+                            <th></th>
+                            <th>Context + useReducer</th>
+                            <th>Zustand</th>
+                            <th>Jotai</th>
+                        </tr>
+                        <tr>
+                            <td>Boilerplate</td>
+                            <td>medium</td>
+                            <td>very low</td>
+                            <td>low</td>
+                        </tr>
+                        <tr>
+                            <td>Re-renders</td>
+                            <td>all consumers on change</td>
+                            <td>selective (subscribe)</td>
+                            <td>atomic / fine-grained</td>
+                        </tr>
+                        <tr>
+                            <td>DevTools</td>
+                            <td>basic</td>
+                            <td>good</td>
+                            <td>good</td>
+                        </tr>
+                        <tr>
+                            <td>Best for</td>
+                            <td>small–medium theme/auth</td>
+                            <td>most apps</td>
+                            <td>very fine-grained state</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans163">
+                    <span class="question-number">163</span>
+                    <h2 class="question-text">How do you implement optimistic updates with TanStack Query (React Query)?
+                    </h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans163">
+                    <pre><code>useMutation({
+  mutationFn: updateTodo,
+  onMutate: async (newTodo) => {
+    await queryClient.cancelQueries({ queryKey: ['todos'] });
+    const previous = queryClient.getQueryData(['todos']);
+    queryClient.setQueryData(['todos'], old => [...old, newTodo]);
+    return { previous };
+  },
+  onError: (err, newTodo, context) => {
+    queryClient.setQueryData(['todos'], context.previous);
+  },
+  onSettled: () => queryClient.invalidateQueries({ queryKey: ['todos'] })
+});</code></pre>
+                </div>
+            </div>
+
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans164">
+                    <span class="question-number">164</span>
+                    <h2 class="question-text">What is the difference between invalidateQueries vs setQueryData?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans164">
+                    <table class="table table-dark table-bordered table-sm">
+                        <tr>
+                            <th>Method</th>
+                            <th>Purpose</th>
+                            <th>Triggers refetch?</th>
+                            <th>Use when</th>
+                        </tr>
+                        <tr>
+                            <td>invalidateQueries</td>
+                            <td>mark as stale</td>
+                            <td>yes (if active)</td>
+                            <td>after mutation, data changed on server</td>
+                        </tr>
+                        <tr>
+                            <td>setQueryData</td>
+                            <td>immediately update cache</td>
+                            <td>no</td>
+                            <td>optimistic updates, manual cache write</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans165">
+                    <span class="question-number">165</span>
+                    <h2 class="question-text">How to debug unnecessary re-renders in React?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans165">
+                    <ol>
+                        <li>React DevTools Profiler tab → record session → look for wasted renders</li>
+                        <li>Why Did You Render library (<code>@welldone-software/why-did-you-render</code>)</li>
+                        <li>console.log inside component body</li>
+                        <li>use React.memo + why-did-you-render on props</li>
+                        <li>Check props equality (new objects/functions every render?)</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans166">
+                    <span class="question-number">166</span>
+                    <h2 class="question-text">What are hydration errors? Common causes?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans166">
+                    <p>Hydration mismatch = server-rendered HTML differs from what client renders.</p>
+                    <p>Common causes:</p>
+                    <ul>
+                        <li>Browser-specific code (window, document) in SSR</li>
+                        <li>Random values / Math.random() / Date.now()</li>
+                        <li>Different timezone / locale formatting</li>
+                        <li>Third-party scripts modifying DOM before hydration</li>
+                        <li>Class components with unsafe lifecycles</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans167">
+                    <span class="question-number">167</span>
+                    <h2 class="question-text">How do you implement code-splitting with React.lazy + Suspense?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans167">
+                    <pre><code>const About = React.lazy(() => import('./About'));
+
+function App() {
+  return (
+    <Suspense fallback={<Loading />}>
+      <Routes>
+        <Route path="/about" element={<About />} />
+      </Routes>
+    </Suspense>
+  );
+}</code></pre>
+                    <p>Creates separate chunk, loads on demand.</p>
+                </div>
+            </div>
+
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans168">
+                    <span class="question-number">168</span>
+                    <h2 class="question-text">What is the difference between memoizing with useMemo vs React.memo?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans168">
+                    <table class="table table-dark table-bordered table-sm">
+                        <tr>
+                            <th></th>
+                            <th>useMemo</th>
+                            <th>React.memo</th>
+                        </tr>
+                        <tr>
+                            <td>Targets</td>
+                            <td>value inside component</td>
+                            <td>whole component render</td>
+                        </tr>
+                        <tr>
+                            <td>Compares</td>
+                            <td>deps array</td>
+                            <td>props (shallow)</td>
+                        </tr>
+                        <tr>
+                            <td>Prevents</td>
+                            <td>re-calculation</td>
+                            <td>re-render</td>
+                        </tr>
+                        <tr>
+                            <td>Typical for</td>
+                            <td>expensive derived data</td>
+                            <td>list items, pure UI components</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans169">
+                    <span class="question-number">169</span>
+                    <h2 class="question-text">How do you handle errors in React Server Components?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans169">
+                    <p>Use <code>error.js</code> file in Next.js App Router (convention-based).</p>
+                    <p>For manual handling:</p>
+                    <ul>
+                        <li>Throw error in RSC → caught by nearest error boundary</li>
+                        <li><code>notFound()</code> / <code>redirect()</code> for expected cases</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans170">
+                    <span class="question-number">170</span>
+                    <h2 class="question-text">What is the role of loading.js in Next.js App Router?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans170">
+                    <p>Automatically wraps page / segment in Suspense with the loading UI.</p>
+                    <p>Shows instantly while server component / data fetches are pending.</p>
+                    <p>Improves perceived performance (shows skeleton / spinner early).</p>
+                </div>
+            </div>
+
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans171">
+                    <span class="question-number">171</span>
+                    <h2 class="question-text">How do you type custom hooks with TypeScript?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans171">
+                    <pre><code>function useLocalStorage&lt;T&gt;(key: string, initialValue: T): [T, (value: T | ((val: T) => T)) => void] {
+  // implementation
+}</code></pre>
+                    <p>Or more advanced with generics + type inference from default value.</p>
+                </div>
+            </div>
+
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans172">
+                    <span class="question-number">172</span>
+                    <h2 class="question-text">What are compound components? Modern implementation pattern</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans172">
+                    <p>Components that share implicit state via context (Tabs, Accordion, Select, Dialog).</p>
+                    <p>Modern style (2025):</p>
+                    <pre><code>&lt;Tabs&gt;
+  &lt;Tabs.List&gt;...&lt;/Tabs.List&gt;
+  &lt;Tabs.Content value="1"&gt;...&lt;/Tabs.Content&gt;
+&lt;/Tabs&gt;</code></pre>
+                    <p>Implemented with custom context + provider.</p>
+                </div>
+            </div>
+
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans173">
+                    <span class="question-number">173</span>
+                    <h2 class="question-text">How to test components that use useEffect with fake timers?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans173">
+                    <p>Use <code>jest.useFakeTimers()</code> + <code>act</code>:</p>
+                    <pre><code>jest.useFakeTimers();
+render(&lt;MyComponent /&gt;);
+act(() => jest.advanceTimersByTime(1000));
+expect(screen.getByText('done')).toBeInTheDocument();</code></pre>
+                </div>
+            </div>
+
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans174">
+                    <span class="question-number">174</span>
+                    <h2 class="question-text">What is the purpose of startTransition vs useTransition?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans174">
+                    <p><code>startTransition</code> = low-level API to wrap any state update as transition.</p>
+                    <p><code>useTransition</code> = hook version that also gives <code>isPending</code> flag.</p>
+                    <p>Use <code>startTransition</code> outside components (e.g. libraries).</p>
+                </div>
+            </div>
+
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans175">
+                    <span class="question-number">175</span>
+                    <h2 class="question-text">How do you prevent prop drilling in very deep trees without Context?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans175">
+                    <ul>
+                        <li>Component composition (children, render props)</li>
+                        <li>Pass components as props (slot pattern)</li>
+                        <li>CloneElement + extra props</li>
+                        <li>Wrapper components that inject behavior</li>
+                    </ul>
+                    <p>Context still most common for truly global data.</p>
+                </div>
+            </div>
+
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans176">
+                    <span class="question-number">176</span>
+                    <h2 class="question-text">What is the difference between getServerSideProps vs getStaticProps
+                        (legacy) vs App Router patterns?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans176">
+                    <p>Pages Router (legacy):</p>
+                    <ul>
+                        <li>getStaticProps → static at build time</li>
+                        <li>getServerSideProps → SSR per request</li>
+                        <li>getStaticPaths → dynamic static paths</li>
+                    </ul>
+                    <p>App Router (modern):</p>
+                    <ul>
+                        <li>Server Components + async/await in component</li>
+                        <li>fetch with <code>{ cache: 'no-store' }</code> = SSR</li>
+                        <li>fetch with <code>{ next: { revalidate: 3600 } }</code> = ISR</li>
+                        <li>Static by default</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans177">
+                    <span class="question-number">177</span>
+                    <h2 class="question-text">How to implement infinite scrolling with TanStack Query?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans177">
+                    <pre><code>const { data, fetchNextPage, hasNextPage, isFetchingNextPage } = useInfiniteQuery({
+  queryKey: ['posts'],
+  queryFn: ({ pageParam = 1 }) => fetchPosts(pageParam),
+  getNextPageParam: (lastPage) => lastPage.nextCursor,
+});</code></pre>
+                    <p>Use IntersectionObserver on last item to call <code>fetchNextPage</code>.</p>
+                </div>
+            </div>
+
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans178">
+                    <span class="question-number">178</span>
+                    <h2 class="question-text">What are the main advantages of TanStack Query over useEffect + fetch?
+                    </h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans178">
+                    <ul>
+                        <li>Automatic caching</li>
+                        <li>Background refetching & stale-while-revalidate</li>
+                        <li>Deduping requests</li>
+                        <li>Pagination & infinite queries built-in</li>
+                        <li>Optimistic updates & rollback</li>
+                        <li>Devtools & error handling</li>
+                        <li>Less race conditions</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans179">
+                    <span class="question-number">179</span>
+                    <h2 class="question-text">How do you handle race conditions when fetching data on user input?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans179">
+                    <ul>
+                        <li>Debounce / throttle input</li>
+                        <li>Use abort controller + cleanup in useEffect</li>
+                        <li>TanStack Query handles it automatically (latest request wins)</li>
+                        <li>Track request ID and ignore old responses</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans180">
+                    <span class="question-number">180</span>
+                    <h2 class="question-text">What is the benefit of using React Server Actions over API routes?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans180">
+                    <ul>
+                        <li>Progressive enhancement (works without JS)</li>
+                        <li>Direct server functions (no endpoint needed)</li>
+                        <li>Automatic pending state & optimistic UI with useActionState</li>
+                        <li>Simpler revalidation (revalidatePath, revalidateTag)</li>
+                        <li>FormData support built-in</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans181">
+                    <span class="question-number">181</span>
+                    <h2 class="question-text">How do you optimize images in Next.js (2025–2026 best practices)?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans181">
+                    <ul>
+                        <li>Use built-in <code>&lt;Image&gt;</code> component</li>
+                        <li>Automatic WebP / AVIF conversion</li>
+                        <li>Lazy loading & placeholders (blur, empty)</li>
+                        <li>Sizes attribute for responsive</li>
+                        <li>Remote images with loader config</li>
+                        <li>Image Optimization API caching</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans182">
+                    <span class="question-number">182</span>
+                    <h2 class="question-text">What is the difference between revalidatePath vs revalidateTag?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans182">
+                    <table class="table table-dark table-bordered table-sm">
+                        <tr>
+                            <th></th>
+                            <th>revalidatePath</th>
+                            <th>revalidateTag</th>
+                        </tr>
+                        <tr>
+                            <td>Granularity</td>
+                            <td>path / route</td>
+                            <td>cache tag</td>
+                        </tr>
+                        <tr>
+                            <td>Use case</td>
+                            <td>after form submit affecting page</td>
+                            <td>multiple pages share same data</td>
+                        </tr>
+                        <tr>
+                            <td>Impact</td>
+                            <td>re-renders layout + page</td>
+                            <td>only tagged fetches</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans183">
+                    <span class="question-number">183</span>
+                    <h2 class="question-text">How do you implement authentication in Next.js App Router?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans183">
+                    <p>Common patterns 2025–2026:</p>
+                    <ul>
+                        <li>NextAuth.js / Auth.js</li>
+                        <li>Server-side session check in middleware</li>
+                        <li>Protect routes with middleware or layout</li>
+                        <li>RSC: read cookies / headers directly</li>
+                        <li>Client: useSession hook</li>
+                        <li>Server Actions: verify session before mutation</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans184">
+                    <span class="question-number">184</span>
+                    <h2 class="question-text">What are partial prerendering (PPR) in Next.js?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans184">
+                    <p>Hybrid rendering: static shell + dynamic holes filled at request time.</p>
+                    <p>Static parts cached, dynamic parts (Suspense boundaries) rendered per request.</p>
+                    <p>Combines best of SSG + SSR + streaming.</p>
+                    <p>Available in Next.js 14+ (stable in 15).</p>
+                </div>
+            </div>
+
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans185">
+                    <span class="question-number">185</span>
+                    <h2 class="question-text">How do you handle SEO in React SPA vs Next.js?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans185">
+                    <p>SPA (Create React App / Vite):</p>
+                    <ul>
+                        <li>Prerendering tools (prerender.io, react-snap)</li>
+                        <li>Server-side prerendering services</li>
+                        <li>Bad for crawlers without JS</li>
+                    </ul>
+                    <p>Next.js:</p>
+                    <ul>
+                        <li>Static export / SSG</li>
+                        <li>SSR / ISR</li>
+                        <li>Metadata API / generateMetadata</li>
+                        <li>Open Graph / Twitter cards automatic</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans186">
+                    <span class="question-number">186</span>
+                    <h2 class="question-text">What is the purpose of generateStaticParams in Next.js App Router?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans186">
+                    <p>Replaces getStaticPaths — defines dynamic routes to prerender at build time.</p>
+                    <pre><code>export async function generateStaticParams() {
+  const posts = await getPosts();
+  return posts.map(post => ({ slug: post.slug }));
+}</code></pre>
+                </div>
+            </div>
+
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans187">
+                    <span class="question-number">187</span>
+                    <h2 class="question-text">How do you implement dark mode in React / Next.js (2025 best way)?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans187">
+                    <ul>
+                        <li>next-themes or custom context + localStorage + useEffect</li>
+                        <li>CSS variables + class on <code>html</code> / <code>body</code></li>
+                        <li>prefers-color-scheme media query</li>
+                        <li>Server component reads cookie → passes initial theme</li>
+                        <li>Client toggle updates cookie + class</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans188">
+                    <span class="question-number">188</span>
+                    <h2 class="question-text">What are the main causes of hydration mismatch warnings?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans188">
+                    <ul>
+                        <li>Browser APIs (window, document) during SSR</li>
+                        <li>Date / random values differing server vs client</li>
+                        <li>Third-party scripts modifying DOM early</li>
+                        <li>useEffect setting state on mount</li>
+                        <li>Different component tree structure</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans189">
+                    <span class="question-number">189</span>
+                    <h2 class="question-text">How do you profile React performance in production?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans189">
+                    <ul>
+                        <li>React DevTools Profiler (development only)</li>
+                        <li>Chrome Performance tab → flamegraph</li>
+                        <li>Why Did You Render in production (with tracking)</li>
+                        <li>Web Vitals (CLS, LCP, FID/INP)</li>
+                        <li>Next.js <code>next build</code> + <code>next start</code> + analytics</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans190">
+                    <span class="question-number">190</span>
+                    <h2 class="question-text">What is Incremental Static Regeneration (ISR)? How to use in Next.js?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans190">
+                    <p>Static page regenerated in background after time interval while serving stale version.</p>
+                    <p>App Router: <code>fetch(..., { next: { revalidate: 3600 } })</code></p>
+                    <p>Pages Router: <code>getStaticProps</code> with <code>revalidate: 60</code></p>
+                </div>
+            </div>
+
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans191">
+                    <span class="question-number">191</span>
+                    <h2 class="question-text">How do you handle SEO metadata dynamically in App Router?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans191">
+                    <pre><code>export async function generateMetadata({ params }) {
+  const post = await getPost(params.slug);
+  return {
+    title: post.title,
+    description: post.excerpt,
+    openGraph: { images: post.ogImage }
+  };
+}</code></pre>
+                </div>
+            </div>
+
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans192">
+                    <span class="question-number">192</span>
+                    <h2 class="question-text">What is the difference between dynamic = 'force-dynamic' vs
+                        'force-static'?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans192">
+                    <table class="table table-dark table-bordered table-sm">
+                        <tr>
+                            <th>Option</th>
+                            <th>Behavior</th>
+                            <th>Use case</th>
+                        </tr>
+                        <tr>
+                            <td>force-dynamic</td>
+                            <td>SSR every request</td>
+                            <td>personalized, real-time data</td>
+                        </tr>
+                        <tr>
+                            <td>force-static</td>
+                            <td>SSG at build</td>
+                            <td>static landing pages, docs</td>
+                        </tr>
+                        <tr>
+                            <td>default (auto)</td>
+                            <td>static if no dynamic APIs used</td>
+                            <td>most pages</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans193">
+                    <span class="question-number">193</span>
+                    <h2 class="question-text">How do you implement middleware in Next.js for auth / redirects?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans193">
+                    <pre><code>import { NextResponse } from 'next/server';
+
+export function middleware(request) {
+  const token = request.cookies.get('token')?.value;
+  if (!token && request.nextUrl.pathname.startsWith('/dashboard')) {
+    return NextResponse.redirect(new URL('/login', request.url));
+  }
+  return NextResponse.next();
+}
+
+export const config = { matcher: ['/dashboard/:path*'] };</code></pre>
+                </div>
+            </div>
+
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans194">
+                    <span class="question-number">194</span>
+                    <h2 class="question-text">What are the main differences between Zustand and Redux Toolkit in 2026?
+                    </h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans194">
+                    <table class="table table-dark table-bordered table-sm">
+                        <tr>
+                            <th>Aspect</th>
+                            <th>Zustand</th>
+                            <th>Redux Toolkit</th>
+                        </tr>
+                        <tr>
+                            <td>Boilerplate</td>
+                            <td>minimal</td>
+                            <td>moderate (but RTK Query helps)</td>
+                        </tr>
+                        <tr>
+                            <td>Bundle size</td>
+                            <td>very small (~1–2 KB)</td>
+                            <td>larger</td>
+                        </tr>
+                        <tr>
+                            <td>DevTools</td>
+                            <td>good</td>
+                            <td>excellent (time-travel)</td>
+                        </tr>
+                        <tr>
+                            <td>Best for</td>
+                            <td>most apps, simplicity</td>
+                            <td>large teams, complex async, enterprise</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans196">
+                    <span class="question-number">196</span>
+                    <h2 class="question-text">What is the recommended way to handle forms in Next.js 14+ / React 19?
+                    </h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans196">
+                    <ul>
+                        <li>Server Actions + <code>useActionState</code> (React 19)</li>
+                        <li>React Hook Form + Zod + Server Actions</li>
+                        <li>Form + action attribute pointing to Server Action</li>
+                        <li>Optimistic updates with useOptimistic</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans197">
+                    <span class="question-number">197</span>
+                    <h2 class="question-text">How do you measure and improve Cumulative Layout Shift (CLS)?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans197">
+                    <ul>
+                        <li>Reserve space for images / ads (<code>width</code>, <code>height</code>, aspect-ratio)</li>
+                        <li>Use Next.js <code>&lt;Image&gt;</code> with fill / sizes</li>
+                        <li>Avoid injecting content above existing content</li>
+                        <li>Font loading: use <code>font-display: swap</code> or self-host</li>
+                        <li>Monitor with Lighthouse / Web Vitals</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans198">
+                    <span class="question-number">198</span>
+                    <h2 class="question-text">What are the main benefits of using TanStack Router vs Next.js routing?
+                    </h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans198">
+                    <ul>
+                        <li>Full type-safety (search params, route params)</li>
+                        <li>Client-side only routing (SPA feel)</li>
+                        <li>Built-in data loading & pending states</li>
+                        <li>Less server dependency</li>
+                        <li>Great for complex apps with nested layouts</li>
+                    </ul>
+                    <p>Next.js still wins for SEO + SSR.</p>
+                </div>
+            </div>
+
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans199">
+                    <span class="question-number">199</span>
+                    <h2 class="question-text">How do you implement role-based access control (RBAC) in Next.js?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans199">
+                    <ul>
+                        <li>Middleware checks session + role → redirect if unauthorized</li>
+                        <li>Server Components: check role before rendering sensitive content</li>
+                        <li>Client: hide UI elements based on role (but never trust client)</li>
+                        <li>Server Actions: verify role before mutation</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans200">
+                    <span class="question-number">200</span>
+                    <h2 class="question-text">What are the top 5 React performance rules in 2026?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans200">
+                    <ol>
+                        <li>Avoid new object/function references in render (useMemo, useCallback wisely)</li>
+                        <li>Use React.memo + stable props for list items & pure components</li>
+                        <li>Virtualize long lists (react-window / TanStack Virtual)</li>
+                        <li>Leverage Server Components + streaming + Suspense</li>
+                        <li>Profile first — don't premature optimize; React Compiler reduces manual work</li>
+                    </ol>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="loan-footer px-2">
+        <div class="container">
+            <div class="row">
+
+                <!-- About React -->
+                <div class="col-md-4 col-sm-12 mb-4">
+                    <h5 class="fw-bold">React Interview Guide</h5>
+                    <p class="pe-0 pe-md-3">
+                        A complete React interview preparation platform designed to help developers
+                        understand core concepts, hooks, component architecture, and real-world use cases.
+                        Learn React step by step with clear explanations, practical examples,
+                        and commonly asked interview questions for freshers and experienced professionals.
+                    </p>
+                </div>
+
+                <!-- React Topics -->
+                <div class="col-md-2 col-6 mb-4">
+                    <h5 class="fw-bold">React Topics</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">React Basics</a></li>
+                        <li><a href="#">JSX & Components</a></li>
+                        <li><a href="#">Props & State</a></li>
+                        <li><a href="#">Hooks</a></li>
+                        <li><a href="#">Lifecycle Methods</a></li>
+                    </ul>
+                </div>
+
+                <!-- Interview Prep -->
+                <div class="col-md-2 col-6 mb-4">
+                    <h5 class="fw-bold">Interview Prep</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Beginner Questions</a></li>
+                        <li><a href="#">Intermediate Questions</a></li>
+                        <li><a href="#">Advanced Questions</a></li>
+                        <li><a href="#">Coding Questions</a></li>
+                        <li><a href="#">Real Interview Q&A</a></li>
+                    </ul>
+                </div>
+
+                <!-- Learning Resources -->
+                <div class="col-md-2 col-6 mb-4">
+                    <h5 class="fw-bold">Learning Resources</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">React Examples</a></li>
+                        <li><a href="#">Mini Projects</a></li>
+                        <li><a href="#">Best Practices</a></li>
+                        <li><a href="#">Performance Tips</a></li>
+                        <li><a href="#">Error Handling</a></li>
+                    </ul>
+                </div>
+
+                <!-- Career Tips -->
+                <div class="col-md-2 col-6 mb-4">
+                    <h5 class="fw-bold">Career Tips</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Frontend Roadmap</a></li>
+                        <li><a href="#">Resume Tips</a></li>
+                        <li><a href="#">Project Ideas</a></li>
+                        <li><a href="#">Interview Tips</a></li>
+                        <li><a href="#">React Job Roles</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Bottom Footer -->
+            <div class="footer-bottom text-center">
+                <p><i class="fa-regular fa-copyright"></i> 2026 React Interview Guide. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="asset/js/script.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- Question & Answer JS-->
+    <script>
+        document.querySelectorAll('.question-header').forEach(header => {
+            header.addEventListener('click', () => {
+                header.classList.toggle('active');
+            });
+        });
+    </script>
+
+</body>
+
+</html>

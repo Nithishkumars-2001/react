@@ -1,0 +1,1006 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>React Interview Questions & Answers | Beginner to Advanced</title>
+
+    <meta name="description"
+        content="Prepare for React interviews with the latest React interview questions and answers. Covers beginner, intermediate, and advanced React concepts, hooks, components, state, props, and performance optimization." />
+
+    <meta name="keywords"
+        content="react interview questions, react js interview questions, react interview questions and answers, react hooks interview questions, react coding interview, frontend interview questions, javascript react interview" />
+
+    <meta name="author" content="React Interview Guide">
+    <meta name="robots" content="index, follow">
+
+    <!--My css-->
+    <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="icon" href="assets/img/company-logo.png" type="image/png">
+
+    <!--Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+
+<body style="background-color: #323232;">
+
+    <!-- NavBar -->
+    <nav id="Navbar" class="navbar px-3 px-md-4 py-md-3">
+
+        <div class="website-name text-white">
+            <div class="logo-img">
+                <i class="fa-brands fa-react"></i>
+            </div>
+
+            <a href="index.html" style="text-decoration: none;">
+                <h2 class="logo-style ps-3"> React Interview Guide </h2>
+            </a>
+        </div>
+
+        <div class="navbar-item">
+            <div class="navbar-menu pe-5">
+                <ul class="navbar-menu-links text-white">
+                    <a href="index.html">
+                        <li> Overview </li>
+                    </a>
+
+                    <a href="page2.html">
+                        <li> React Basics </li>
+                    </a>
+
+                    <a href="page3.html">
+                        <li> Hooks </li>
+                    </a>
+
+                    <a href="page4.html">
+                        <li> Advanced </li>
+                    </a>
+
+                    <a href="page5.html">
+                        <li> Coding Questions </li>
+                    </a>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="navbar-menu-toggle" onclick="shownavbar()">
+            <i class="bi bi-list"></i>
+        </div>
+
+    </nav>
+
+    <!--Side Navbar-->
+    <aside class="side-navbar">
+        <p class="cross-symbol" onclick="closenavbar()"> <i class="fa fa-times" aria-hidden="true"></i> </p>
+
+        <div class="side-navbar-links">
+            <p class="side-navbar-link"> <i class="fas fa-search"></i> <a href="index.html"> Overview </a> </p>
+            <p class="side-navbar-link"> <i class="fa-brands fa-react"></i> <a href="page2.html"> React Basics </a> </p>
+            <p class="side-navbar-link"> <i class="fa-solid fa-car"></i> <a href="page3.html"> Hooks </a>
+            </p>
+            <p class="side-navbar-link"> <i class="fa-solid fa-tractor"></i> <a href="page4.html">
+                    Advanced </a>
+            </p>
+            <p class="side-navbar-link"> <i class="fa-solid fa-building"></i> <a href="page5.html"> Coding Questions
+                </a> </p>
+        </div>
+    </aside>
+
+    <!-- Page Header -->
+    <section class="page-header px-3">
+        <div class="page-header-content">
+            <h4>REACT BASICS</h4>
+            <h1>Master the Fundamentals of React</h1>
+        </div>
+    </section>
+
+    <!-- Question & Answer -->
+    <div class="react-interview-question">
+        <div class="container">
+
+            <h3 class="header-title">Learn React Basics – Interview Q&A</h3>
+
+            <!-- Question 51 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans51">
+                    <span class="question-number">51</span>
+                    <h2 class="question-text">What is React?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans51">
+                    <p>React is an open-source JavaScript library for building user interfaces, especially single-page
+                        applications.</p>
+                    <p>Created by Facebook, it allows developers to create reusable UI components.</p>
+                </div>
+            </div>
+
+            <!-- Question 52 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans52">
+                    <span class="question-number">52</span>
+                    <h2 class="question-text">What are the main features of React?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans52">
+                    <ul>
+                        <li>Component-based architecture</li>
+                        <li>Virtual DOM</li>
+                        <li>One-way data flow</li>
+                        <li>JSX syntax</li>
+                        <li>Declarative UI</li>
+                        <li>Reusability</li>
+                        <li>Strong community & ecosystem</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Question 53 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans53">
+                    <span class="question-number">53</span>
+                    <h2 class="question-text">What is JSX?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans53">
+                    <p>JSX stands for JavaScript XML.</p>
+                    <p>It is a syntax extension that allows you to write HTML-like code inside JavaScript.</p>
+                    <p>Browser doesn’t understand JSX → Babel transpiles it to <code>React.createElement()</code> calls.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Question 54 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans54">
+                    <span class="question-number">54</span>
+                    <h2 class="question-text">What is the difference between Element and Component in React?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans54">
+                    <ul>
+                        <li><strong>Element</strong>: Plain object describing what to render (like
+                            <code>&lt;div&gt;</code>)</li>
+                        <li><strong>Component</strong>: Function or class that returns elements (reusable piece of UI)
+                        </li>
+                    </ul>
+                    <p>Example:</p>
+                    <pre><code>// Element
+const title = &lt;h1&gt;Hello&lt;/h1&gt;;
+
+// Component
+function Title() {
+  return &lt;h1&gt;Hello&lt;/h1&gt;;
+}</code></pre>
+                </div>
+            </div>
+
+            <!-- Question 55 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans55">
+                    <span class="question-number">55</span>
+                    <h2 class="question-text">How do you create a React app?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans55">
+                    <p>Most common ways (2025):</p>
+                    <ol>
+                        <li><code>npx create-react-app my-app</code> (classic)</li>
+                        <li><code>npx create-vite@latest my-app -- --template react</code> (faster & modern)</li>
+                        <li><code>npx create-next-app@latest</code> (with Next.js)</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- Question 56 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans56">
+                    <span class="question-number">56</span>
+                    <h2 class="question-text">What is a component in React?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans56">
+                    <p>A component is an independent, reusable piece of UI.</p>
+                    <p>Two types:</p>
+                    <ul>
+                        <li><strong>Function component</strong> (preferred today)</li>
+                        <li><strong>Class component</strong> (older style)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Question 57 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans57">
+                    <span class="question-number">57</span>
+                    <h2 class="question-text">Write a simple functional component.</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans57">
+                    <pre><code>function Welcome(props) {
+  return &lt;h1&gt;Hello, {props.name}&lt;/h1&gt;;
+}
+
+// or arrow function (very common)
+const Welcome = ({ name }) =&gt; &lt;h1&gt;Hello, {name}&lt;/h1&gt;;</code></pre>
+                </div>
+            </div>
+
+            <!-- Question 58 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans58">
+                    <span class="question-number">58</span>
+                    <h2 class="question-text">What are props in React?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans58">
+                    <p>Props (properties) are read-only data passed from parent to child component.</p>
+                    <p>Like function arguments.</p>
+                    <pre><code>&lt;Welcome name="Sara" /&gt;</code></pre>
+                </div>
+            </div>
+
+            <!-- Question 59 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans59">
+                    <span class="question-number">59</span>
+                    <h2 class="question-text">What is state in React?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans59">
+                    <p>State is a built-in object that holds data that can change over time.</p>
+                    <p>When state changes → component re-renders.</p>
+                    <p>In functional components we use <code>useState</code> hook.</p>
+                </div>
+            </div>
+
+            <!-- Question 60 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans60">
+                    <span class="question-number">60</span>
+                    <h2 class="question-text">Difference between props and state?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans60">
+                    <table class="table table-dark table-bordered table-sm">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Props</th>
+                                <th>State</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Mutable?</td>
+                                <td>No (read-only)</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <td>Who owns?</td>
+                                <td>Parent component</td>
+                                <td>Component itself</td>
+                            </tr>
+                            <tr>
+                                <td>Can be passed?</td>
+                                <td>Yes, to children</td>
+                                <td>No (but can pass via props)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Question 61 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans61">
+                    <span class="question-number">61</span>
+                    <h2 class="question-text">What is the useState hook? Give example.</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans61">
+                    <pre><code>import { useState } from 'react';
+
+function Counter() {
+  const [count, setCount] = useState(0);
+
+  return (
+    &lt;&gt;
+      &lt;p&gt;Count: {count}&lt;/p&gt;
+      &lt;button onClick={() =&gt; setCount(count + 1)}&gt;+1&lt;/button&gt;
+    &lt;/&gt;
+  );
+}</code></pre>
+                </div>
+            </div>
+
+            <!-- Question 62 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans62">
+                    <span class="question-number">62</span>
+                    <h2 class="question-text">Why do we need to use setState / setCount instead of modifying state
+                        directly?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans62">
+                    <p>Direct mutation doesn’t trigger re-render.</p>
+                    <p>React compares previous & new state → only re-renders when using setter function.</p>
+                </div>
+            </div>
+
+            <!-- Question 63 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans63">
+                    <span class="question-number">63</span>
+                    <h2 class="question-text">What is an event handler in React?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans63">
+                    <p>Functions that respond to user actions (click, change, submit, etc.).</p>
+                    <p>Use camelCase: <code>onClick</code>, <code>onChange</code>, <code>onSubmit</code></p>
+                </div>
+            </div>
+
+            <!-- Question 64 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans64">
+                    <span class="question-number">64</span>
+                    <h2 class="question-text">How do you pass data from child to parent?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans64">
+                    <p>Pass a callback function as prop from parent to child.</p>
+                    <pre><code>// Parent
+function Parent() {
+  const [name, setName] = useState("");
+  return &lt;Child setName={setName} /&gt;;
+}
+
+// Child
+function Child({ setName }) {
+  return &lt;input onChange={e =&gt; setName(e.target.value)} /&gt;;
+}</code></pre>
+                </div>
+            </div>
+
+            <!-- Question 65 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans65">
+                    <span class="question-number">65</span>
+                    <h2 class="question-text">What is conditional rendering in React?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans65">
+                    <ul>
+                        <li>Ternary operator: <code>{isLoggedIn ? &lt;Dashboard /&gt; : &lt;Login /&gt;}</code></li>
+                        <li>Logical &&: <code>{isLoading && &lt;Spinner /&gt;}</code></li>
+                        <li>Early return: <code>if (!user) return &lt;Login /&gt;;</code></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Question 66 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans66">
+                    <span class="question-number">66</span>
+                    <h2 class="question-text">How do you render a list in React?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans66">
+                    <pre><code>const users = ["Alice", "Bob", "Charlie"];
+
+return (
+  &lt;ul&gt;
+    {users.map((user, index) =&gt; (
+      &lt;li key={index}&gt;{user}&lt;/li&gt;
+    ))}
+  &lt;/ul&gt;
+);</code></pre>
+                </div>
+            </div>
+
+            <!-- Question 67 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans67">
+                    <span class="question-number">67</span>
+                    <h2 class="question-text">Why do we need keys in lists?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans67">
+                    <p>Keys help React identify which items have changed, added, or removed.</p>
+                    <p>Without keys → unnecessary re-renders or lost state.</p>
+                    <p>Best: use unique ID from data, not array index.</p>
+                </div>
+            </div>
+
+            <!-- Question 68 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans68">
+                    <span class="question-number">68</span>
+                    <h2 class="question-text">What is React.Fragment or &lt;&gt;&lt;/&gt;?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans68">
+                    <p>Allows grouping multiple elements without adding extra DOM node.</p>
+                    <pre><code>return (
+  &lt;&gt;
+    &lt;h1&gt;Title&lt;/h1&gt;
+    &lt;p&gt;Content&lt;/p&gt;
+  &lt;/&gt;
+);</code></pre>
+                </div>
+            </div>
+
+            <!-- Question 69 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans69">
+                    <span class="question-number">69</span>
+                    <h2 class="question-text">What are class components? (basic understanding)</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans69">
+                    <p>Older way to write components using ES6 classes.</p>
+                    <pre><code>class Welcome extends React.Component {
+  render() {
+    return &lt;h1&gt;Hello, {this.props.name}&lt;/h1&gt;;
+  }
+}</code></pre>
+                    <p>Today mostly replaced by functional components + hooks.</p>
+                </div>
+            </div>
+
+            <!-- Question 70 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans70">
+                    <span class="question-number">70</span>
+                    <h2 class="question-text">What is the purpose of render() method? (class components)</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans70">
+                    <p>It is the only required method in class component.</p>
+                    <p>Returns the JSX (or null) that describes what should appear on screen.</p>
+                </div>
+            </div>
+
+            <!-- Question 71 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans71">
+                    <span class="question-number">71</span>
+                    <h2 class="question-text">What are synthetic events in React?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans71">
+                    <p>React wraps native browser events into cross-browser compatible synthetic events.</p>
+                    <p>Ensures consistent behavior across browsers.</p>
+                </div>
+            </div>
+
+            <!-- Question 72 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans72">
+                    <span class="question-number">72</span>
+                    <h2 class="question-text">How do you prevent default behavior in React events?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans72">
+                    <pre><code>&lt;form onSubmit={(e) =&gt; {
+  e.preventDefault();
+  // handle form
+}}&gt;</code></pre>
+                </div>
+            </div>
+
+            <!-- Question 73 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans73">
+                    <span class="question-number">73</span>
+                    <h2 class="question-text">What is one-way data binding / unidirectional data flow?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans73">
+                    <p>Data flows only from parent → child via props.</p>
+                    <p>Children cannot directly modify parent state → must use callback functions.</p>
+                    <p>Makes debugging easier and predictable.</p>
+                </div>
+            </div>
+
+            <!-- Question 74 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans74">
+                    <span class="question-number">74</span>
+                    <h2 class="question-text">What file is the entry point of a React application?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans74">
+                    <p><code>index.js</code> or <code>main.jsx</code></p>
+                    <pre><code>import ReactDOM from 'react-dom/client';
+import App from './App';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(&lt;App /&gt;);</code></pre>
+                </div>
+            </div>
+
+            <!-- Question 75 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans75">
+                    <span class="question-number">75</span>
+                    <h2 class="question-text">What is the purpose of ReactDOM?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans75">
+                    <p>It is the bridge between React and the browser DOM.</p>
+                    <p>Methods like <code>createRoot</code>, <code>render</code>, <code>hydrateRoot</code>.</p>
+                </div>
+            </div>
+
+            <!-- Question 76 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans76">
+                    <span class="question-number">76</span>
+                    <h2 class="question-text">Can we return multiple elements from a component without wrapper?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans76">
+                    <p>Yes — using <code>&lt;&gt;&lt;/&gt;</code> (Fragment) or <code>React.Fragment</code>.</p>
+                </div>
+            </div>
+
+            <!-- Question 77 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans77">
+                    <span class="question-number">77</span>
+                    <h2 class="question-text">What happens if we don’t give key in list items?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans77">
+                    <p>React shows warning in console.</p>
+                    <p>May cause performance issues, wrong UI updates, or lost component state.</p>
+                </div>
+            </div>
+
+            <!-- Question 78 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans78">
+                    <span class="question-number">78</span>
+                    <h2 class="question-text">How do you update state based on previous state?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans78">
+                    <pre><code>setCount(prev =&gt; prev + 1);</code></pre>
+                    <p>Safer when multiple updates happen in same event loop.</p>
+                </div>
+            </div>
+
+            <!-- Question 79 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans79">
+                    <span class="question-number">79</span>
+                    <h2 class="question-text">What is the children prop?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans79">
+                    <p>Special prop that contains everything passed between opening & closing tags.</p>
+                    <pre><code>&lt;Card&gt;
+  &lt;h2&gt;Title&lt;/h2&gt;
+  Content here
+&lt;/Card&gt;</code></pre>
+                </div>
+            </div>
+
+            <!-- Question 80 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans80">
+                    <span class="question-number">80</span>
+                    <h2 class="question-text">How do you pass multiple props to a component?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans80">
+                    <pre><code>&lt;User
+  name="John"
+  age={28}
+  isActive={true}
+  address={{ city: "Mumbai", pin: 400001 }}
+/></code></pre>
+                </div>
+            </div>
+
+            <!-- Question 81 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans81">
+                    <span class="question-number">81</span>
+                    <h2 class="question-text">What will happen if we call setState in constructor?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans81">
+                    <p>It’s allowed but not recommended.</p>
+                    <p>Better to use state initializer:</p>
+                    <pre><code>state = { count: 0 };</code></pre>
+                </div>
+            </div>
+
+            <!-- Question 82 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans82">
+                    <span class="question-number">82</span>
+                    <h2 class="question-text">How do you style React components? (basic ways)</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans82">
+                    <ul>
+                        <li>Inline styles: <code>style={{ color: 'red' }}</code></li>
+                        <li>CSS class: <code>className="btn"</code></li>
+                        <li>CSS Modules</li>
+                        <li>Styled-components / Emotion</li>
+                        <li>Tailwind CSS</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Question 83 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans83">
+                    <span class="question-number">83</span>
+                    <h2 class="question-text">What is the difference between className and class in JSX?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans83">
+                    <p><code>class</code> is a reserved word in JavaScript → use <code>className</code> instead.</p>
+                </div>
+            </div>
+
+            <!-- Question 84 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans84">
+                    <span class="question-number">84</span>
+                    <h2 class="question-text">How do you handle input changes in React?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans84">
+                    <pre><code>const [value, setValue] = useState("");
+
+&lt;input
+  value={value}
+  onChange={(e) =&gt; setValue(e.target.value)}
+/></code></pre>
+                </div>
+            </div>
+
+            <!-- Question 85 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans85">
+                    <span class="question-number">85</span>
+                    <h2 class="question-text">What are controlled components?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans85">
+                    <p>Form elements whose value is controlled by React state.</p>
+                    <p>Most common and recommended way.</p>
+                </div>
+            </div>
+
+            <!-- Question 86 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans86">
+                    <span class="question-number">86</span>
+                    <h2 class="question-text">What are uncontrolled components?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans86">
+                    <p>Form elements that maintain their own state in the DOM.</p>
+                    <p>Use <code>defaultValue</code> and refs to access value.</p>
+                    <p>Less common today.</p>
+                </div>
+            </div>
+
+            <!-- Question 87 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans87">
+                    <span class="question-number">87</span>
+                    <h2 class="question-text">How do you create a ref in functional component?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans87">
+                    <pre><code>const inputRef = useRef(null);
+
+&lt;input ref={inputRef} /&gt;
+
+// later
+inputRef.current.focus();</code></pre>
+                </div>
+            </div>
+
+            <!-- Question 88 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans88">
+                    <span class="question-number">88</span>
+                    <h2 class="question-text">What is lifting state up?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans88">
+                    <p>Moving shared state to the closest common parent component.</p>
+                    <p>Allows sibling components to share and sync data.</p>
+                </div>
+            </div>
+
+            <!-- Question 89 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans89">
+                    <span class="question-number">89</span>
+                    <h2 class="question-text">What is prop drilling?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans89">
+                    <p>Passing props through many levels even when intermediate components don’t use them.</p>
+                    <p>Solution: Context API, Zustand, etc.</p>
+                </div>
+            </div>
+
+            <!-- Question 90 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans90">
+                    <span class="question-number">90</span>
+                    <h2 class="question-text">Can we use async/await inside useState initializer?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans90">
+                    <p>No — initializer must be synchronous.</p>
+                    <p>Use <code>useEffect</code> for async operations.</p>
+                </div>
+            </div>
+
+            <!-- Question 91 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans91">
+                    <span class="question-number">91</span>
+                    <h2 class="question-text">What does { …props } mean?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans91">
+                    <p>Spread operator — passes all remaining props to child.</p>
+                    <pre><code>function Button({ children, ...rest }) {
+  return &lt;button {...rest}&gt;{children}&lt;/button&gt;;
+}</code></pre>
+                </div>
+            </div>
+
+            <!-- Question 92 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans92">
+                    <span class="question-number">92</span>
+                    <h2 class="question-text">How do you destructure props?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans92">
+                    <pre><code>function User({ name, age, city }) {
+  return &lt;p&gt;{name} is {age} from {city}&lt;/p&gt;;
+}</code></pre>
+                </div>
+            </div>
+
+            <!-- Question 93 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans93">
+                    <span class="question-number">93</span>
+                    <h2 class="question-text">What happens when you return null from a component?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans93">
+                    <p>Nothing is rendered (component is skipped).</p>
+                    <p>Useful for conditional rendering.</p>
+                </div>
+            </div>
+
+            <!-- Question 94 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans94">
+                    <span class="question-number">94</span>
+                    <h2 class="question-text">Can we call hooks conditionally?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans94">
+                    <p>No — violates Rules of Hooks.</p>
+                    <p>Hooks must be called in the same order on every render.</p>
+                </div>
+            </div>
+
+            <!-- Question 95 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans95">
+                    <span class="question-number">95</span>
+                    <h2 class="question-text">What is the purpose of key prop when not in a list?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans95">
+                    <p>Forcing remount when key changes.</p>
+                    <pre><code>{tab === 'home' ? &lt;Home key="home" /&gt; : &lt;Profile key="profile" /&gt;}</code></pre>
+                </div>
+            </div>
+
+            <!-- Question 96 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans96">
+                    <span class="question-number">96</span>
+                    <h2 class="question-text">How do you comment in JSX?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans96">
+                    <pre><code>{/* This is a comment */}</code></pre>
+                    <p>Inside curly braces because it’s JavaScript.</p>
+                </div>
+            </div>
+
+            <!-- Question 97 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans97">
+                    <span class="question-number">97</span>
+                    <h2 class="question-text">What is createElement?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans97">
+                    <p>Low-level method that JSX compiles to.</p>
+                    <pre><code>React.createElement("div", { className: "box" }, "Hello")</code></pre>
+                </div>
+            </div>
+
+            <!-- Question 98 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans98">
+                    <span class="question-number">98</span>
+                    <h2 class="question-text">Can we use React without JSX?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans98">
+                    <p>Yes — using <code>React.createElement</code> directly.</p>
+                    <p>Less readable, so JSX is preferred.</p>
+                </div>
+            </div>
+
+            <!-- Question 99 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans99">
+                    <span class="question-number">99</span>
+                    <h2 class="question-text">What is the React strict mode?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans99">
+                    <p>&lt;React.StrictMode&gt; enables extra checks in development:</p>
+                    <ul>
+                        <li>Double rendering of components (detects side effects)</li>
+                        <li>Warnings for deprecated features</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Question 100 -->
+            <div class="question-card">
+                <div class="question-header" data-bs-toggle="collapse" data-bs-target="#ans100">
+                    <span class="question-number">100</span>
+                    <h2 class="question-text">Should we keep all logic inside component or separate it?</h2>
+                    <span class="toggle-icon">▼</span>
+                </div>
+                <div class="answer-body collapse" id="ans100">
+                    <p>Best practice: extract reusable logic into custom hooks or utility functions.</p>
+                    <p>Keeps components clean and focused on UI.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="loan-footer px-2">
+        <div class="container">
+            <div class="row">
+
+                <!-- About React -->
+                <div class="col-md-4 col-sm-12 mb-4">
+                    <h5 class="fw-bold">React Interview Guide</h5>
+                    <p class="pe-0 pe-md-3">
+                        A complete React interview preparation platform designed to help developers
+                        understand core concepts, hooks, component architecture, and real-world use cases.
+                        Learn React step by step with clear explanations, practical examples,
+                        and commonly asked interview questions for freshers and experienced professionals.
+                    </p>
+                </div>
+
+                <!-- React Topics -->
+                <div class="col-md-2 col-6 mb-4">
+                    <h5 class="fw-bold">React Topics</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">React Basics</a></li>
+                        <li><a href="#">JSX & Components</a></li>
+                        <li><a href="#">Props & State</a></li>
+                        <li><a href="#">Hooks</a></li>
+                        <li><a href="#">Lifecycle Methods</a></li>
+                    </ul>
+                </div>
+
+                <!-- Interview Prep -->
+                <div class="col-md-2 col-6 mb-4">
+                    <h5 class="fw-bold">Interview Prep</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Beginner Questions</a></li>
+                        <li><a href="#">Intermediate Questions</a></li>
+                        <li><a href="#">Advanced Questions</a></li>
+                        <li><a href="#">Coding Questions</a></li>
+                        <li><a href="#">Real Interview Q&A</a></li>
+                    </ul>
+                </div>
+
+                <!-- Learning Resources -->
+                <div class="col-md-2 col-6 mb-4">
+                    <h5 class="fw-bold">Learning Resources</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">React Examples</a></li>
+                        <li><a href="#">Mini Projects</a></li>
+                        <li><a href="#">Best Practices</a></li>
+                        <li><a href="#">Performance Tips</a></li>
+                        <li><a href="#">Error Handling</a></li>
+                    </ul>
+                </div>
+
+                <!-- Career Tips -->
+                <div class="col-md-2 col-6 mb-4">
+                    <h5 class="fw-bold">Career Tips</h5>
+                    <ul class="footer-links">
+                        <li><a href="#">Frontend Roadmap</a></li>
+                        <li><a href="#">Resume Tips</a></li>
+                        <li><a href="#">Project Ideas</a></li>
+                        <li><a href="#">Interview Tips</a></li>
+                        <li><a href="#">React Job Roles</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Bottom Footer -->
+            <div class="footer-bottom text-center">
+                <p><i class="fa-regular fa-copyright"></i> 2026 React Interview Guide. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="asset/js/script.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- Question & Answer JS-->
+    <script>
+        document.querySelectorAll('.question-header').forEach(header => {
+            header.addEventListener('click', () => {
+                header.classList.toggle('active');
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>
